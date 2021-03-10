@@ -1,0 +1,53 @@
+/* @theme smul */
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+section {
+    font-family: 'Vollkorn', serif;
+    background-color: rgb(255, 245, 225);
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+code {
+    border-radius: 5px;
+}
+
+pre {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333;
+    border: 2px solid #333;
+    background-color: transparent;
+}
+
+img {
+    background-color: transparent;
+}
+
+thead tr {
+    background-color: rgb(205, 195, 175);
+    font-weight: bold;
+}
+
+tbody tr {
+    background-color: rgb(240, 230, 210);
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgb(215, 205, 185);
+}
+
+section.references a {
+    font-size: .9rem;
+}
+
+section.encoding2 table {
+    font-size: .5rem;
+    display: table;
+}
+
+section.encoding2 td {
+    padding: 1px 10px;
+    background-color: transparent;
+}

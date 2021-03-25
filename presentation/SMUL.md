@@ -31,6 +31,18 @@ headingDivider: 2
 
 ## What is a **smul** URL? (2)
 
+`https://www.google.com/search?hl=en&ei=csxIYJX4CsHPgwfj5onYCQ&q=What+is+a+smul+URL%3F&oq=What+is+a+smul+URL%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsANQAFgAYNo7aAFwAXgAgAFxiAFxkgEDMC4xmAEAqgEHZ3dzLXdpesgBCMABAQ&sclient=...`
+
+⬇
+
+`https://smul.io/4579518`
+
+<!--
+transforming a long url in a smaller url that redirects to the original long url
+-->
+
+## What is a **smul** URL? (3)
+
 `https://www.google.com/...` → `https://smul.io/4579518`
 
 Base 10 `[0-9]`
@@ -40,10 +52,6 @@ Base 10 `[0-9]`
 Base 62 `[A-Z, a-z, 0-9]`
 
 `62 ^ 7 = 3.5 Trillion`
-
-<!--
-transforming a long url in a smaller url that redirects to the original long url
--->
 
 ## Solutions?
 
@@ -110,7 +118,7 @@ Disadvantages:
 
 <!--
 26 = Hexavigesimal
-58 = Octoquinquagesimal - Base58 encoding, a variant of Base62 excluding 0 (zero), I (capital i), O (capital o) and l (lower case L).
+58 = Octoquinquagesimal - Base58 encoding, a variant of Base62 excluding 0 (zero), I (capital i), O (capital o) and l (lower case L). (removes ambiguous character)
 62 = Duosexagesimal
 64 = Tetrasexagesimal
 -->
@@ -161,6 +169,15 @@ Value for A:
 `A=0, AA=00, 9=61, BA=62 (Recommended for maths)`
 
 <!--
+
+We are going to iterate through our number (counter) dividing it into smaller and smaller chunks and for each of these subsets we're going to see to what character our number falls into.
+
+We're going to do that by repeatedly doing and Euclidean division of the number by the BASE.
+
+The remainder is going to be the index that tells us to which character we matched with.
+
+And the quotient will give us the ceiling of the new subset.
+
 Euclidean division – or division with remainder – is the process of dividing one integer (the dividend) by another (the divisor), in a way that produces a quotient and a remainder smaller than the divisor.
 -->
 
@@ -233,5 +250,13 @@ Base 26 encoding explained
 
 Base N conversion algorithms
 <https://www.dcode.fr/base-n-convert/>
+
+## Tools
+
+Marp - create slides with Markdown
+<https://marp.app/>
+
+Visual Studio Code
+<https://code.visualstudio.com/>
 
 ## That's all she wrote

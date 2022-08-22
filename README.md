@@ -1,6 +1,6 @@
 # A smul python tech talk
 
-This repository hosts the code created in the live coding session and python tech talk available [here](https://youtu.be/ybHSDs2NtO8)
+This repository hosts the code created in the live coding session and python tech talk available [here](https://youtu.be/mt2X_NyFk-0)
 
 Checkout the [slides](presentation/README.md)
 
